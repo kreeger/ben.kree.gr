@@ -1,0 +1,12 @@
+# Site settings
+title: Ben Kreeger
+email: ben.kreeger@icloud.com
+description: > # this means to ignore newlines until "baseurl:"
+  The personal and professional blog of Ben Kreeger.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ben.kree.gr" # the base hostname & protocol for your site
+twitter_username: kreeger
+github_username:  kreeger
+
+# Build settings
+markdown: kramdown
