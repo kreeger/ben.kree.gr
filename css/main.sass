@@ -4,15 +4,16 @@
 @charset "utf-8"
 
 // External imports
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic,300italic,700italic)
+@import "meyer-reset"
+@import url(http://fonts.googleapis.com/css?family=Catamaran:700,200)
 
 // Our variables
-$base-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif
-$base-font-size:   17px
+$base-font-family: "Catamaran", Helvetica, Arial, sans-serif
+$base-font-size:   16px
 $small-font-size:  $base-font-size * 0.875
 $base-line-height: 1.6
 
-$spacing-unit:     30px
+$spacing-unit:     10px
 
 $text-color:       #111
 $body-background-color: #fdfdfd
@@ -27,7 +28,8 @@ $grey-color-dark:  darken($grey-color, 25%)
 $content-width:    1024px
 
 $on-palm:          600px
-$on-laptop:        800px
+$on-tablet:        768px
+$on-laptop:        900px
 
 // Using media queries with like this:
 // +media-query($on-palm) {
@@ -40,5 +42,6 @@ $on-laptop:        800px
     @media screen and (max-width: $device)
         @content
 
+@import "base", "typography", "layout"
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "base", "layout", "syntax-highlighting"
+// @import "base", "layout", "syntax-highlighting"

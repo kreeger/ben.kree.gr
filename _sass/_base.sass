@@ -1,13 +1,4 @@
-// Reset some basic elements
-
-body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure
-  margin: 0
-  padding: 0
-
 // Basic styling
-
-html
-  background-color: $background-color
 
 body
   font-family: $base-font-family
@@ -20,8 +11,11 @@ body
 
 // Set `margin-bottom` to maintain vertical rhythm
 
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm
+h1, h2, h3, h4, h5, h6, pre, figure, %vertical-rhythm
   margin-bottom: $spacing-unit / 2
+
+p, blockquote, ul, ol, dl
+  margin-bottom: $spacing-unit
 
 // Images
 
@@ -50,7 +44,7 @@ li
 // Headings
 
 h1, h2, h3, h4, h5, h6
-  font-weight: 300
+  font-weight: 500
 
 // Links
 
@@ -96,19 +90,19 @@ pre
 
 // Wrapper
 
-.wrapper
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2))
-  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2))
-  margin-right: auto
-  margin-left: auto
-  padding-right: $spacing-unit
-  padding-left: $spacing-unit
-  @extend %clearfix
-  +media-query($on-laptop)
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}))
-    max-width: calc(#{$content-width} - (#{$spacing-unit}))
-    padding-right: $spacing-unit / 2
-    padding-left: $spacing-unit / 2
+// .wrapper
+//   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2))
+//   max-width: calc(#{$content-width} - (#{$spacing-unit} * 2))
+//   margin-right: auto
+//   margin-left: auto
+//   padding-right: $spacing-unit
+//   padding-left: $spacing-unit
+//   @extend %clearfix
+//   +media-query($on-laptop)
+//     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}))
+//     max-width: calc(#{$content-width} - (#{$spacing-unit}))
+//     padding-right: $spacing-unit / 2
+//     padding-left: $spacing-unit / 2
 
 // Clearfix
 
@@ -117,14 +111,3 @@ pre
     content: ""
     display: table
     clear: both
-
-// Icons
-
-.icon
-  > svg
-    display: inline-block
-    width: 16px
-    height: 16px
-    vertical-align: middle
-    path
-      fill: $grey-color
